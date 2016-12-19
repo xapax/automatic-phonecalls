@@ -1,10 +1,15 @@
 # automatic-phonecalls
 
-Built with skype and skype4py. Let's the user make automated calls and interact with the keypad using skype.
+Built with skype and skype4py. Let's the user make automated calls that can interact with the keypad.
 
 I was calling an office the other day, and they had not implemented a telephone-queue system. So it was really frustrating to have to call again and again. On every call I had to press certain keys to navigate to the specific office I had to talk to. Using skype you can call straight from the linux-terminal, but it does not allow you to automatically "press buttons". So it is still a hassle. That's why I wrote this little tool.
 
 I recommend using it together with a cronjob.
+
+The code is based on the example found here:
+https://github.com/Skype4Py/Skype4Py/blob/master/examples/callfriend.py
+
+
 
 ## Installing
 It was tested on Ubuntu 16.04
@@ -26,6 +31,7 @@ So find out what numbers or symbols you need to press in order to reach your des
 --number/user bob.dylan"
 --key1 to key10"
 
+You can use up to 10 keys.
 Exit using Ctrl-C or hang up in the skype-interface
 
 Example:
